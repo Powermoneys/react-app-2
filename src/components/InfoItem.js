@@ -5,7 +5,7 @@ export class InfoItem extends Component {
     return (
       <div className='box-item'>
         <div>
-            <img src={'./img/' + this.props.item.img} onClick={() => this.props.showItem(this.props.item)} />
+            <img src={'./img/' + this.props.item.img} onClick={() => this.props.showItem(this.props.item)} alt = {this.props.item.img} />
             <h2>{this.props.item.title}</h2>
             <p>{this.props.item.desc}</p>
             <b>{this.props.item.price}₽</b>
